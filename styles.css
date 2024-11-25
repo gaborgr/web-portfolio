@@ -1,0 +1,812 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins";
+  color: white;
+  font-size: 14px;
+  background-image: url(images/2148219270.jpg);
+  background-size: center;
+  background-attachment: fixed;
+}
+
+div,
+li,
+aside,
+main,
+img,
+a,
+p h2,
+nav {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+/*-------- NAVBAR SECTION --------*/
+.dashboard {
+  background: rgb(56, 65, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 65, 80, 1) 0%,
+    rgba(46, 51, 63, 1) 70%,
+    rgba(37, 37, 49, 1) 100%
+  );
+  width: 70vw;
+  margin: auto;
+  margin-top: 25px;
+  position: static;
+  padding: 15px 15px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.77);
+  container-type: inline-size;
+  container-name: dashboard;
+}
+
+.dashboard__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #facf87;
+}
+
+.dashboard__navbar-pages {
+  display: flex;
+}
+
+.navbar-links {
+  margin: 0 1rem;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-social__icon {
+  height: 25px;
+  width: 25px;
+}
+
+.tittle {
+  font-weight: 200;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+/*-------- DASHBOARD SECTION --------*/
+
+.dashboard__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+main,
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  height: 100%;
+  width: 30%;
+  display: grid;
+  grid-template-columns: 200px;
+}
+
+.left_aside-buttons {
+  background-color: #facf87;
+  margin: 10px 0;
+  padding: 10px 0;
+  border-radius: 25px;
+  max-width: 200px;
+  height: 45px;
+  line-height: 1.8;
+  display: flex;
+  justify-content: center;
+}
+
+.personal-photo-container {
+  text-align: center;
+}
+
+.personal-photo-container img {
+  max-width: 75%;
+}
+
+aside > div > a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.location-tag {
+  display: flex;
+  justify-content: space-around;
+}
+
+.data-items {
+  display: flex;
+}
+
+.resume {
+  background-color: #73a1ef;
+}
+
+.about-button,
+.data-items {
+  color: #2d313c;
+}
+
+.left_aside-buttons:hover {
+  opacity: 0.85;
+  outline: 2px solid #73a1ef;
+  box-shadow: 0 0 10px #73a1ef;
+}
+
+.resume:hover {
+  opacity: 0.85;
+  outline: 2px solid #facf87;
+  box-shadow: 0 0 10px #facf87;
+}
+
+.resume-button {
+  color: white;
+}
+
+.data-items {
+  align-content: center;
+  color: white;
+}
+
+.data-items img {
+  width: 70%;
+  height: 70%;
+  align-self: center;
+  padding-right: 4px;
+}
+
+.location-tag {
+  background-color: #252531;
+}
+
+.contact-tag {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-buttons {
+  background-color: transparent;
+  display: flex;
+  padding-top: 7px;
+  margin: auto;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.contact-buttons img {
+  width: 25px;
+  height: 25px;
+}
+
+/* ---------------------------SKILL SECTION--------------------------- */
+
+.dashboard__content-skills {
+  display: flex;
+  padding: 20px 20px;
+  justify-content: center;
+  width: 70vw;
+}
+
+.skill_container {
+  display: flex;
+  margin: 0;
+  padding: 5px 0;
+}
+
+.legend_graph,
+.tec_skills-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.description_container h1 {
+  color: #facf87;
+}
+
+.description_container h2 {
+  color: #73a1ef;
+}
+
+.tec_skills h2 {
+  margin-left: 40px;
+}
+
+.detail_button {
+  background: linear-gradient(
+    90deg,
+    rgba(56, 65, 80, 1) 0%,
+    rgba(46, 51, 63, 1) 70%,
+    rgba(37, 37, 49, 1) 100%
+  );
+  display: inline-block;
+  width: 37%;
+  text-align: center;
+  border-radius: 25px;
+  outline: 1px ridge #73a1ef;
+  margin-top: 15px;
+  color: #facf87;
+}
+
+.detail_button a {
+  text-decoration: none;
+  color: #facf87;
+}
+
+/* ---------------------------TEC ICONS--------------------------- */
+
+.tec_skills-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.tec_skills-items {
+  padding-top: 15px;
+}
+
+.tec_skills-items span {
+  display: flex;
+  font-size: 50px;
+  color: #facf87;
+  align-items: center;
+  padding-bottom: 15px;
+}
+
+.tec-item__img {
+  max-width: 100%;
+  width: 50%;
+}
+
+.tec-img__container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #facf87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(
+    120deg,
+    #e2e4e8 5%,
+    #e2e4e8 10%,
+    #555b68,
+    #4e5462,
+    #484d5c,
+    #414655,
+    #3a3f4f,
+    #343849
+  );
+  box-shadow: inset 0 0 0 5px black;
+}
+
+.tec_skill-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tec_skill-data p {
+  padding-top: 10px;
+}
+
+.tec_skill-mobile {
+  display: none;
+}
+
+/* ---------------------------OTHER EXPERIENCE SECTION--------------------------- */
+
+.dashboard__content-experience {
+  display: flex;
+  min-width: 25%;
+}
+
+.dashboard__content-experience {
+  display: flex;
+  padding: 20px 10px;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.brand-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.experience_logo {
+  margin: auto;
+}
+
+.gl-logo,
+.unilever-logo {
+  filter: grayscale(1);
+  width: 65%;
+}
+
+.right_aside-buttons {
+  display: flex;
+  background-color: #73a1ef;
+  margin: auto;
+  margin-top: 15px;
+  border-radius: 25px;
+  width: 70%;
+  height: 45px;
+  line-height: 1.8;
+  place-content: center;
+  align-items: center;
+}
+
+.more_experience-button {
+  color: white;
+}
+
+.right_aside-buttons:hover {
+  opacity: 0.85;
+  outline: 2px solid #facf87;
+  box-shadow: 0 0 10px #facf87;
+}
+
+.dashboard__content-experience h2 {
+  color: #facf87;
+  margin-bottom: 7px;
+}
+
+/* ---------------------------PROJECTS SECTION--------------------------- */
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.projects-section__tittle {
+  color: black;
+  text-align: center;
+  margin: 20px 0;
+  font-size: xx-large;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.projects-item {
+  display: grid;
+  background: linear-gradient(
+    90deg,
+    rgba(56, 65, 80, 1) 0%,
+    rgba(46, 51, 63, 1) 70%,
+    rgba(37, 37, 49, 1) 100%
+  );
+  border-radius: 25px;
+  padding: 30px;
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.77);
+}
+
+.projects-item h3 {
+  color: #facf87;
+  text-align: center;
+}
+
+.projects-item img {
+  width: 25%;
+  margin: auto;
+  padding-top: 10px;
+}
+
+.projects-item p {
+  color: white;
+  text-wrap: pretty;
+  margin-top: 10px;
+}
+
+.project-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-button {
+  background: linear-gradient(
+    90deg,
+    rgba(56, 65, 80, 1) 0%,
+    rgba(46, 51, 63, 1) 70%,
+    rgba(37, 37, 49, 1) 100%
+  );
+  display: inline-block;
+  width: 37%;
+  text-align: center;
+  border-radius: 25px;
+  outline: 1px ridge #73a1ef;
+  margin-top: 15px;
+  color: #facf87;
+  text-decoration: none;
+}
+
+.project-button:hover {
+  opacity: 0.85;
+  box-shadow: 0 0 10px #73a1ef;
+}
+
+.mobile_icons {
+  display: none;
+}
+
+/* ---------------------------FORM SECTION--------------------------- */
+
+.form-container {
+  background: rgb(56, 65, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 65, 80, 1) 0%,
+    rgba(46, 51, 63, 1) 70%,
+    rgba(37, 37, 49, 1) 100%
+  );
+  width: 70vw;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: static;
+  padding: 15px 15px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.77);
+}
+
+.form__title {
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.form__form {
+  padding: 12px;
+  width: 55%;
+  display: grid;
+  margin-bottom: 30px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "name lastname"
+    "email email"
+    "message message"
+    "button button";
+  gap: 12px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 40px #0004;
+}
+
+.form__input-container:first-child {
+  grid-area: name;
+}
+
+.form__input-container:nth-child(2) {
+  grid-area: lastname;
+}
+
+.form__input-container:nth-child(3) {
+  grid-area: email;
+}
+
+.form__input-container:nth-child(4) {
+  grid-area: message;
+}
+
+.form__input-container:last-child {
+  grid-area: button;
+}
+
+.form__input-container :is(input, textarea) {
+  width: 100%;
+  padding: 9px;
+  font-size: 16px;
+  margin: 4px;
+  border: none;
+  box-shadow: 2px 2px 4px #0003;
+}
+
+.form__input-container textarea {
+  resize: none;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+.form__input-container input[type="submit"] {
+  padding: 12px;
+  background-color: #18233f;
+  color: #fff;
+}
+
+.form__title {
+  font-size: 2.4rem;
+}
+
+/* ---------------------------FOOTER SECTION --------------------------- */
+
+.footer-container {
+  background: rgb(56, 65, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 65, 80, 1) 0%,
+    rgba(46, 51, 63, 1) 70%,
+    rgba(37, 37, 49, 1) 100%
+  );
+  width: 70vw;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: static;
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.77);
+}
+
+/* ---------------------------ABOUT PAGE--------------------------- */
+
+.container-about,
+.container-other,
+.container-tec {
+  font-size: larger;
+}
+
+.text-description {
+  margin: 20px;
+}
+
+.about_content strong {
+  margin: 20px;
+}
+
+/* ---------------------------RESPONSIVE DESING--------------------------- */
+
+@media (max-width: 1500px) {
+  .dashboard,
+  .projects-section,
+  .footer-container,
+  .form-container {
+    width: 77vw;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1400px) {
+  .dashboard,
+  .projects-section,
+  .footer-container,
+  .form-container {
+    width: 83vw;
+  }
+}
+
+@media (max-width: 1290px) {
+  .dashboard,
+  .projects-section,
+  .footer-container,
+  .form-container {
+    width: 86vw;
+  }
+}
+
+@media (max-width: 1240px) {
+  .dashboard,
+  .projects-section,
+  .footer-container,
+  .form-container {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 1190px) {
+  .dashboard {
+    width: 93vw;
+  }
+}
+
+@media (max-width: 1150px) {
+  .dashboard,
+  .projects-section,
+  .footer-container,
+  .form-container {
+    width: 96vw;
+  }
+}
+
+@media (max-width: 1130px) {
+  body {
+    background-image: none;
+    background-color: #252531;
+  }
+
+  .dashboard,
+  .projects-section,
+  .footer-container {
+    width: 100vw;
+    border-radius: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  .form-container {
+    width: 90vw;
+  }
+
+  .form__form {
+    width: 95%;
+  }
+
+  .projects-section {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .projects-section__tittle {
+    color: white;
+  }
+
+  .projects-container {
+    padding: 15px;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .brand-icons {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .tec_skills-items span {
+    display: none;
+  }
+}
+
+@media (max-width: 1010px) {
+  .tec-img__container {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+@media (max-width: 915px) {
+  .tec-img__container {
+    width: 77px;
+    height: 77px;
+  }
+}
+
+@media (max-width: 865px) {
+  .dashboard__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dashboard__content-personal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .personal-photo-container {
+    grid-row: span 3;
+  }
+
+  .left_aside-buttons {
+    grid-column: 2;
+    justify-self: center;
+    width: 70%;
+  }
+
+  .dashboard__content-skills,
+  .dashboard__content-experience {
+    width: 90%;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-social {
+    display: none;
+  }
+
+  .contact-buttons {
+    display: none;
+  }
+
+  .dashboard__content-personal {
+    margin-bottom: 0;
+  }
+
+  .personal-photo-container {
+    grid-row: span 2;
+  }
+
+  .location-tag {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+
+  .contact-buttons {
+    grid-column: span 2;
+    grid-row: auto;
+  }
+
+  .dashboard__content-skills,
+  .dashboard__content-experience {
+    width: 100%;
+    padding: 5px 5px;
+  }
+
+  .tec_skills-items {
+    display: none;
+  }
+
+  .mobile_icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .mobile_icons img {
+    margin: auto;
+    width: 50%;
+  }
+
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
