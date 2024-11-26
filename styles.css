@@ -433,8 +433,8 @@ aside > div > a {
 }
 
 .project-buttons {
-  display: flex;
-  justify-content: space-evenly;
+  /* display: flex; */
+  margin: auto;
 }
 
 .project-button {
@@ -445,7 +445,7 @@ aside > div > a {
     rgba(37, 37, 49, 1) 100%
   );
   display: inline-block;
-  width: 37%;
+  min-width: 80px;
   text-align: center;
   border-radius: 25px;
   outline: 1px ridge #73a1ef;
